@@ -1,0 +1,106 @@
+  /* an thanh controls video, am thanh, full man hinh, play pause */ 
+  
+ video::-webkit-media-controls-overlay-play-button {
+        display: flex !important;
+        opacity: 0.03 !important;
+    }
+  
+ video::-webkit-media-controls-time-remaining-display {display: none;
+  }
+  
+ video::-webkit-media-controls-current-time-display{display: none;
+  }
+  
+  video::-webkit-media-controls-mute-button {
+display:none;
+}
+  
+ video::-webkit-media-controls-fullscreen-button {
+    display: none;
+} 
+  
+video::-webkit-media-controls-timeline {
+  display:none;
+  }
+  
+/* start scroll */
+.scroll-snap-container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+}
+
+.scroll-element {
+  height: 100vh;
+  background: #3e4041;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: &quot;Roboto&quot;, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
+}
+  
+ .scroll-element:nth-child(even) {
+  /*background: #f1faee;
+  color: #003049;*/
+} 
+  
+/* start scroll intro */  
+.scroll-snap-container-intro {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+}
+
+.scroll-element-intro {
+  height: 100vh;
+  background: #3e4041;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: &quot;Roboto&quot;, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
+}  
+  
+
+
+  video {
+    width: 100%;
+    max-height: 100%; 
+} 
+  
+
+/* responsive video tren mobi va tablet */  
+
+@media screen and (max-width : 768px) {
+    video {
+    width: 100%;
+    max-height: auto;
+    padding-bottom:20.5%;
+} 
+}
+@media screen and (max-width : 640px) {
+  video {
+    width: 100%;
+    max-height: auto;
+    padding-bottom:23.5%;
+} 
+  
+}
+@media screen and (max-width : 480px) {
+  video {
+    width: auto;
+    max-height: 100%;
+    padding-bottom:26.5%;
+}      
+}  
+      
+/* hide menu truot */  
+::-webkit-scrollbar{height:0px;width:0px}::-webkit-scrollbar-track{-webkit-box-shadow:inset 0px 0px 0px #e0e0e0;background:#fff;border:0 solid #000}::-webkit-scrollbar-thumb{-webkit-box-shadow:inset 0px 0px 0px #15f305;background:#15f305}
+   
