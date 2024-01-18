@@ -1,0 +1,26 @@
+/*!
+ * Name: box style dep
+ * Version: 1.0.0
+ * Last Updated: January 18, 2024
+ * Author: Hoa Mai Bình Định
+ * Author URI: fb.com/hoamaitetbinhdinh
+ * Website: http://hoamaixunau.blogspot.com
+ */
+.boxnoidung {
+ background: linear-gradient(40deg,#4caf5014,#ffeb3b17);
+    border-radius: 3px;
+    border: 3px solid #d5d5d500;
+    color: #333333;
+    border-image-source: linear-gradient(to right, #4caf5080, #9c27b0a8, #03a9f4a6);
+    border-image-slice: 1;
+    font-family: inherit;
+    font-size: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0px;
+    padding: 1em;
+    vertical-align: baseline;
+}
